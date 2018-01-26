@@ -76,6 +76,11 @@ var analysisUtil={
             });
         });
 
+    },
+    flush:function(){
+        var remoteAnalysis=this.getRemoteAnalysis($("#txt-analysis").val());
+        this.initTag();
+        this.initResult();
     }
 
 
@@ -99,11 +104,9 @@ function initTag(tagList){
 jQuery(function($) {
 
     $("#analysis-btn").click(function () {
-        var remoteAnalysis=analysisUtil.getRemoteAnalysis($("#txt-analysis").val());
-        analysisUtil.initTag();
-        analysisUtil.initResult();
+        analysisUtil.flush();
     });
 
-    $("#analysis-btn").click();
+    analysisUtil.flush();
 
 })
