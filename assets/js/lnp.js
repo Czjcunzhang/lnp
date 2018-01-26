@@ -102,10 +102,8 @@ jQuery(function($) {
         var remoteAnalysis=analysisUtil.getRemoteAnalysis($("#txt-analysis").val());
         analysisUtil.initTag();
         analysisUtil.initResult();
-
-
-        //console.log(analysisUtil.tagDesc);
-
     });
+
+    $("#analysis-btn").click();
 
 })
