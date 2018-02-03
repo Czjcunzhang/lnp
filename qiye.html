@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>实体分析</title>
+		<title>企业名称补全</title>
 		<meta name="keywords" content="LNP" />
 		<meta name="description" content="LNP" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -95,7 +95,7 @@
 					</div><!-- #sidebar-shortcuts -->
 
 					<ul class="nav nav-list">
-						<li class="active">
+						<li >
 							<a href="index.html">
 								<i class="icon-dashboard"></i>
 								<span class="menu-text"> 实体分析 </span>
@@ -130,7 +130,7 @@
 							</a>
 						</li>
 
-						<li >
+						<li class="active">
 							<a href="qiye.html">
 								<i class="icon-dashboard"></i>
 								<span class="menu-text"> 企业名称补全 </span>
@@ -162,7 +162,7 @@
 								<i class="icon-home home-icon"></i>
 								<a href="#">首页</a>
 							</li>
-							<li class="active">实体分析</li>
+							<li class="active">企业名称补全</li>
 						</ul><!-- .breadcrumb -->
 
 					</div>
@@ -177,7 +177,7 @@
 
 									<div class="row">
 										<div class="col-sm-12">
-												<textarea class="txt-analysis" id="txt-analysis"  class="input">新浪手机讯 4月17日上午消息，近期关于iPhone 6传闻格外多，最新一则来自法国网站nowhereelse.fr，因为iPhone 6屏幕变大，它的电源键将被放在机身侧面。这种推测来源于几张“iPhone 6硅胶壳”图片，“i6”这种写法似乎是中国南方一些附件厂商喜爱的称呼。假设这种保护壳为真，那下一代iPhone最明显的改善就是机身变得更大，并且电源键从机身顶部被转移到了侧面，相信这是为了唤醒手机更方便，现在很多5寸以上大屏手机都采用这种方式。</textarea>
+												<textarea class="txt-analysis" id="txt-analysis"  class="input">华傲科技</textarea>
 											</div>
 										</div>
 
@@ -195,29 +195,50 @@
 
 						<div class="row">
 
-							<div class="col-xs-12">
 							<h3 class="header smaller lighter">分析结果</h3>
-								<div class="row txt-analysis-page">
 
-									<div class="col-sm-8">
-										<h4>词性分析:</h4>
-										<p id="result-panel">
+							<!--<div class="col-xs-12">
+								<div class="table-responsive">
+									<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+										<thead>
+										<tr>
+											<th>企业名称</th>
+											<th>分数</th>
+										</tr>
+										</thead>
+
+										<tbody>
+										<tr>
+
+											<td>深圳市华傲数据技术有限公司</td>
+											<td>0.759</td>
+										</tr>
 
 
-
-										</p>
-
-									</div>
-									<div class="col-sm-4">
-										<h4>词性类别图示:</h4>
-										<p id="tag-panel">
-
-										</p>
-									</div>
-
-
+										</tbody>
+									</table>
 								</div>
 							</div>
+-->
+
+							<div class="col-xs-12">
+								<div class="table-responsive">
+									<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+										<thead>
+										<tr>
+											<th>企业名称</th>
+											<th>分数</th>
+										</tr>
+										</thead>
+
+										<tbody id="result-body">
+
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+
 
 						</div>
 
@@ -288,7 +309,7 @@
 
 		<script src="assets/js/ace-elements.min.js"></script>
 		<script src="assets/js/ace.min.js"></script>
-		<script src="assets/js/lnp/shiti.js"></script>
+		<script src="assets/js/lnp/qiye.js"></script>
 		<!-- inline scripts related to this page -->
 
 		<script type="text/javascript">
