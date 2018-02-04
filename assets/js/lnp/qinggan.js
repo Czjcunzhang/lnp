@@ -35,7 +35,7 @@ var analysisUtil={
     initResult:function(){
 
         var _this=this;
-        $("#reslut-page").html(this.resultTxt);
+        $("#reslut-page").html(this.resultTxt+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+this.result);
 
     },
     flush:function(){
