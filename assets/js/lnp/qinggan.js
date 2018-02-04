@@ -24,7 +24,7 @@ var analysisUtil={
         _this.result=parseFloat(response.data);
         if(_this.result>0.5)
             _this.resultTxt="正面";
-        else if (_this.result<0.5)
+        else if (_this.result< -0.5)
             _this.resultTxt="负面";
         else
             _this.resultTxt="中性";
